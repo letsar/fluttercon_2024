@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "slides",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart"
+        }
+    ]
+}

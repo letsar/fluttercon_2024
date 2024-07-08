@@ -1,2 +1,1 @@
-# fluttercon_2024
-Slides for Fluttercon2024
+Slides for the "Enhance your Flutter painting skills!" presented at FlutterCon 2024 in Berlin.
