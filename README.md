@@ -1,1 +1,0 @@
-Slides for the "Enhance your Flutter painting skills!" presented at FlutterCon 2024 in Berlin.
