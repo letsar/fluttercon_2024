@@ -26,9 +26,8 @@ jobs:
       - name: Build
         run: flutter build web --release --web-renderer=canvaskit
 
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v3
         with:
-            name: github-pages
             path: build/web/
 
   deploy:
@@ -40,4 +39,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
