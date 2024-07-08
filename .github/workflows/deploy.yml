@@ -26,17 +26,7 @@ jobs:
       - name: Build
         run: flutter build web --release --web-renderer=canvaskit
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: bluefireteam/flutter-gh-pages@v7
         with:
-            path: build/web/
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          webRenderer: canvaskit 
+          baseHref: /fluttercon_2024/
